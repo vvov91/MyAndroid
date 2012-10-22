@@ -35,10 +35,10 @@ public class MainActivity extends Activity implements OnClickListener {
 	public void onClick(View v) {
 		switch (v.getId()) {
 	     case R.id.btnOk:
-	       tvOut.setText("Нажата кнопка 1");
+	       tvOut.setText("Нажата кнопка Ok");
 	       break;
 	     case R.id.btnCancel:
-	       tvOut.setText("Нажата кнопка 2");
+	       tvOut.setText("Нажата кнопка Cancel");
 	       break;
 	     }
 	}
