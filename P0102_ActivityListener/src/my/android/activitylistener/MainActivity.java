@@ -1,4 +1,4 @@
-package my.android.listener;
+package my.android.activitylistener;
 
 import android.os.Bundle;
 import android.app.Activity;
@@ -8,12 +8,11 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class MainActivity extends Activity {
-
+public class MainActivity extends Activity implements OnClickListener {
+	
 	TextView tvOut;
 	Button btnOk;
 	Button btnCancel;
-	   
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,21 +22,8 @@ public class MainActivity extends Activity {
         btnOk = (Button) findViewById(R.id.btnOk);
         btnCancel = (Button) findViewById(R.id.btnCancel);
         
-        OnClickListener oclBtn = new OnClickListener() {
-            public void onClick(View v) {
-            	switch (v.getId()) {
-                case R.id.btnOk:
-                  tvOut.setText("Нажата кнопка 1");
-                  break;
-                case R.id.btnCancel:
-                  tvOut.setText("Нажата кнопка 2");
-                  break;
-                }
-            }
-        };
-        
-        btnOk.setOnClickListener(oclBtn);
-        btnCancel.setOnClickListener(oclBtn);
+        btnOk.setOnClickListener(this);
+        btnCancel.setOnClickListener(this);
     }
 
     @Override
@@ -45,4 +31,15 @@ public class MainActivity extends Activity {
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
+
+	public void onClick(View v) {
+		switch (v.getId()) {
+	     case R.id.btnOk:
+	       tvOut.setText("Нажата кнопка 1");
+	       break;
+	     case R.id.btnCancel:
+	       tvOut.setText("Нажата кнопка 2");
+	       break;
+	     }
+	}
 }

@@ -23,7 +23,7 @@ public class MainActivity extends Activity {
 	 
 	     OnClickListener oclBtnOk = new OnClickListener() {
 	       public void onClick(View v) {
-	         tvOut.setText("Нажата кнопка ОК");
+	         tvOut.setText("Нажата кнопка 1");
 	       }
 	     };
 	 
@@ -31,7 +31,7 @@ public class MainActivity extends Activity {
 	
 	     OnClickListener oclBtnCancel = new OnClickListener() {
 	       public void onClick(View v) {
-	           tvOut.setText("Нажата кнопка Cancel");
+	           tvOut.setText("Нажата кнопка 2");
 	         }
 	       };
 	    
