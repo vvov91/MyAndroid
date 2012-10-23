@@ -16,6 +16,13 @@ public final class R {
     }
     public static final class id {
         public static final int chbExtMenu=0x7f070001;
+        public static final int group1=0x7f070006;
+        public static final int menu_add=0x7f070003;
+        public static final int menu_copy=0x7f070007;
+        public static final int menu_delete=0x7f070005;
+        public static final int menu_edit=0x7f070004;
+        public static final int menu_exit=0x7f070009;
+        public static final int menu_paste=0x7f070008;
         public static final int menu_settings=0x7f070002;
         public static final int textView=0x7f070000;
     }
@@ -24,6 +31,7 @@ public final class R {
     }
     public static final class menu {
         public static final int main=0x7f060000;
+        public static final int mymenu=0x7f060001;
     }
     public static final class string {
         public static final int app_name=0x7f040000;
