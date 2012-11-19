@@ -1,0 +1,8 @@
+<resources>
+
+    <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar" />
+    <color name="Pad">#F0F9FF</color>
+    <color name="Args">#FAF4F0</color>
+    <color name="EditArgs">#E4E7DA</color>
+
+</resources>
