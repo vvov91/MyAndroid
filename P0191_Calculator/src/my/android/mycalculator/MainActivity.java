@@ -1,5 +1,7 @@
 package my.android.mycalculator;
 
+import java.text.DecimalFormat;
+
 import android.os.Bundle;
 import android.app.Activity;
 import android.text.method.ScrollingMovementMethod;
@@ -62,6 +64,9 @@ public class MainActivity extends Activity implements OnClickListener {
     }
 
 	public void onClick(View arg0) {
+		// форматирование вывода
+		DecimalFormat argFormat = new DecimalFormat("###.###");
+		
 		// действия в зависимости от нажатой кнопки на кейпаде
 		switch(arg0.getId()) {
 		// очистка поля с операндом
@@ -81,7 +86,7 @@ public class MainActivity extends Activity implements OnClickListener {
 		case R.id.btnPls:
 			if(action == 0) {						// если уже не выполняем какую-либо операцию
 				arg1 = Float.parseFloat(editArgs.getText().toString());		// сохраняем операнд
-				Args.setText(Args.getText() + "-------\n"+ arg1 + " +");	// выводим в результаты
+				Args.setText(Args.getText() + "-------\n"+ argFormat.format(arg1) + " +");	// выводим в результаты
 				editArgs.setText("0");				// в поле ввода операнда снова 0
 				action = 1;							// производим суммирование
 			}
@@ -91,7 +96,7 @@ public class MainActivity extends Activity implements OnClickListener {
 		case R.id.btnMns:
 			if(action == 0) {						// если уже не выполняем какую-либо операцию
 				arg1 = Float.parseFloat(editArgs.getText().toString());		// сохраняем операнд
-				Args.setText(Args.getText() + "-------\n"+ arg1 + " -");	// выводим в результаты
+				Args.setText(Args.getText() + "-------\n"+ argFormat.format(arg1) + " -");	// выводим в результаты
 				editArgs.setText("0");				// в поле ввода операнда снова 0
 				action = 2;							// производим суммирование
 			}
@@ -101,7 +106,7 @@ public class MainActivity extends Activity implements OnClickListener {
 		case R.id.btnMlt:
 			if(action == 0) {						// если уже не выполняем какую-либо операцию
 				arg1 = Float.parseFloat(editArgs.getText().toString());		// сохраняем операнд
-				Args.setText(Args.getText() + "-------\n"+ arg1 + " *");	// выводим в результаты
+				Args.setText(Args.getText() + "-------\n"+ argFormat.format(arg1) + " *");	// выводим в результаты
 				editArgs.setText("0");				// в поле ввода операнда снова 0
 				action = 3;							// производим суммирование
 			}
@@ -111,7 +116,7 @@ public class MainActivity extends Activity implements OnClickListener {
 		case R.id.btnDvd:
 			if(action == 0) {						// если уже не выполняем какую-либо операцию
 				arg1 = Float.parseFloat(editArgs.getText().toString());		// сохраняем операнд
-				Args.setText(Args.getText() + "-------\n"+ arg1 + " /");	// выводим в результаты
+				Args.setText(Args.getText() + "-------\n"+ argFormat.format(arg1) + " /");	// выводим в результаты
 				editArgs.setText("0");				// в поле ввода операнда снова 0
 				action = 4;							// производим суммирование
 			}
@@ -241,7 +246,7 @@ public class MainActivity extends Activity implements OnClickListener {
 			}
 			
 			if(action != 0) {												// если были произведены вычисления
-				Args.setText(Args.getText() + " " + arg2 + " = " + result + "\n");	// вывод результата
+				Args.setText(Args.getText() + " " + argFormat.format(arg2) + " = " + argFormat.format(result) + "\n");	// вывод результата
 				editArgs.setText("0");										// в поле ввода операнда ноль
 				arg1 = 0;													// обнуляем первый операнд
 				action = 0;													// вычисление выполнено
