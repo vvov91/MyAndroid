@@ -4,8 +4,10 @@ import java.text.DecimalFormat;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.content.Intent;
 import android.text.method.ScrollingMovementMethod;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -24,6 +26,8 @@ public class MainActivity extends Activity implements OnClickListener {
 	int action = 0;
 	// первый операнд
 	float arg1;
+	// настройки
+	boolean[] settings = {false, false};
 	
 	Calculator calc = new Calculator();
 	
@@ -60,7 +64,31 @@ public class MainActivity extends Activity implements OnClickListener {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.main, menu);
-        return true;
+        return super.onCreateOptionsMenu(menu);
+    }
+    
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+    	switch(item.getItemId()) {
+    	case R.id.menu_exit:
+    		finish();
+    		break;
+    		
+    	case R.id.menu_settings:
+    		Intent intent = new Intent(this, Settings.class);
+    		intent.putExtra("1", settings[0]);
+    		intent.putExtra("2", settings[1]);
+    		startActivityForResult(intent, 1);
+    	    break;
+    	}
+    	return super.onOptionsItemSelected(item);
+    }
+    
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+      if (data == null) return;
+      settings[0] = data.getBooleanExtra("0", false);
+      settings[1] = data.getBooleanExtra("1", false);
     }
 
 	public void onClick(View arg0) {
@@ -86,7 +114,7 @@ public class MainActivity extends Activity implements OnClickListener {
 		case R.id.btnPls:
 			if(action == 0) {						// если уже не выполняем какую-либо операцию
 				arg1 = Float.parseFloat(editArgs.getText().toString());		// сохраняем операнд
-				Args.setText(Args.getText() + "-------\n"+ argFormat.format(arg1) + " +");	// выводим в результаты
+				Args.setText(Args.getText() + "-------\n" + argFormat.format(arg1) + " +");	// выводим в результаты
 				editArgs.setText("0");				// в поле ввода операнда снова 0
 				action = 1;							// производим суммирование
 			}
@@ -96,7 +124,7 @@ public class MainActivity extends Activity implements OnClickListener {
 		case R.id.btnMns:
 			if(action == 0) {						// если уже не выполняем какую-либо операцию
 				arg1 = Float.parseFloat(editArgs.getText().toString());		// сохраняем операнд
-				Args.setText(Args.getText() + "-------\n"+ argFormat.format(arg1) + " -");	// выводим в результаты
+				Args.setText(Args.getText() + "-------\n" + argFormat.format(arg1) + " -");	// выводим в результаты
 				editArgs.setText("0");				// в поле ввода операнда снова 0
 				action = 2;							// производим суммирование
 			}
@@ -106,7 +134,7 @@ public class MainActivity extends Activity implements OnClickListener {
 		case R.id.btnMlt:
 			if(action == 0) {						// если уже не выполняем какую-либо операцию
 				arg1 = Float.parseFloat(editArgs.getText().toString());		// сохраняем операнд
-				Args.setText(Args.getText() + "-------\n"+ argFormat.format(arg1) + " *");	// выводим в результаты
+				Args.setText(Args.getText() + "-------\n" + argFormat.format(arg1) + " *");	// выводим в результаты
 				editArgs.setText("0");				// в поле ввода операнда снова 0
 				action = 3;							// производим суммирование
 			}
@@ -116,7 +144,7 @@ public class MainActivity extends Activity implements OnClickListener {
 		case R.id.btnDvd:
 			if(action == 0) {						// если уже не выполняем какую-либо операцию
 				arg1 = Float.parseFloat(editArgs.getText().toString());		// сохраняем операнд
-				Args.setText(Args.getText() + "-------\n"+ argFormat.format(arg1) + " /");	// выводим в результаты
+				Args.setText(Args.getText() + "-------\n" + argFormat.format(arg1) + " /");	// выводим в результаты
 				editArgs.setText("0");				// в поле ввода операнда снова 0
 				action = 4;							// производим суммирование
 			}

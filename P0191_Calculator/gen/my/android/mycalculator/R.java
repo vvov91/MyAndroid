@@ -20,37 +20,45 @@ public final class R {
         public static final int ic_launcher=0x7f020001;
     }
     public static final class id {
-        public static final int ButtonsLayout=0x7f080003;
-        public static final int MainLayout=0x7f080000;
-        public static final int btn0=0x7f080018;
-        public static final int btn1=0x7f080009;
-        public static final int btn2=0x7f08000a;
-        public static final int btn3=0x7f08000b;
-        public static final int btn4=0x7f08000e;
-        public static final int btn5=0x7f08000f;
-        public static final int btn6=0x7f080010;
-        public static final int btn7=0x7f080013;
-        public static final int btn8=0x7f080014;
-        public static final int btn9=0x7f080015;
-        public static final int btnClr=0x7f080005;
-        public static final int btnClrE=0x7f080006;
-        public static final int btnDot=0x7f080019;
-        public static final int btnDvd=0x7f080016;
-        public static final int btnEqvl=0x7f08001a;
-        public static final int btnMlt=0x7f080011;
-        public static final int btnMns=0x7f08000c;
-        public static final int btnPls=0x7f080007;
-        public static final int btnsRow1=0x7f080004;
-        public static final int btnsRow2=0x7f080008;
-        public static final int btnsRow3=0x7f08000d;
-        public static final int btnsRow4=0x7f080012;
-        public static final int btnsRow5=0x7f080017;
-        public static final int menu_settings=0x7f08001b;
-        public static final int tvArgs=0x7f080001;
-        public static final int tvEditArgs=0x7f080002;
+        public static final int ButtonsLayout=0x7f080005;
+        public static final int MainLayout=0x7f080002;
+        public static final int SettingsLayout=0x7f08001d;
+        public static final int btn0=0x7f08001a;
+        public static final int btn1=0x7f08000b;
+        public static final int btn2=0x7f08000c;
+        public static final int btn3=0x7f08000d;
+        public static final int btn4=0x7f080010;
+        public static final int btn5=0x7f080011;
+        public static final int btn6=0x7f080012;
+        public static final int btn7=0x7f080015;
+        public static final int btn8=0x7f080016;
+        public static final int btn9=0x7f080017;
+        public static final int btnClr=0x7f080007;
+        public static final int btnClrE=0x7f080008;
+        public static final int btnDot=0x7f08001b;
+        public static final int btnDvd=0x7f080018;
+        public static final int btnEqvl=0x7f08001c;
+        public static final int btnMlt=0x7f080013;
+        public static final int btnMns=0x7f08000e;
+        public static final int btnPls=0x7f080009;
+        public static final int btnSave=0x7f08001f;
+        public static final int btnsRow1=0x7f080006;
+        public static final int btnsRow2=0x7f08000a;
+        public static final int btnsRow3=0x7f08000f;
+        public static final int btnsRow4=0x7f080014;
+        public static final int btnsRow5=0x7f080019;
+        public static final int checkBox=0x7f080000;
+        public static final int listView=0x7f08001e;
+        public static final int menu_exit=0x7f080021;
+        public static final int menu_settings=0x7f080020;
+        public static final int textView=0x7f080001;
+        public static final int tvArgs=0x7f080003;
+        public static final int tvEditArgs=0x7f080004;
     }
     public static final class layout {
-        public static final int main=0x7f030000;
+        public static final int list_item=0x7f030000;
+        public static final int main=0x7f030001;
+        public static final int settings=0x7f030002;
     }
     public static final class menu {
         public static final int main=0x7f070000;
@@ -62,6 +70,7 @@ public final class R {
         public static final int dot=0x7f04000f;
         public static final int eight=0x7f04000b;
         public static final int equal=0x7f040010;
+        public static final int exit=0x7f040015;
         public static final int five=0x7f040008;
         public static final int four=0x7f040007;
         public static final int menu_settings=0x7f040001;
@@ -69,6 +78,7 @@ public final class R {
         public static final int nine=0x7f04000c;
         public static final int one=0x7f040004;
         public static final int plus=0x7f040011;
+        public static final int save=0x7f040016;
         public static final int seven=0x7f04000a;
         public static final int six=0x7f040009;
         public static final int slash=0x7f040014;
