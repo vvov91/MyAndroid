@@ -1,0 +1,14 @@
+<resources>
+
+    <string name="app_name">Restaurants</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">Рестораны</string>
+    <string name="photo">Фото</string>
+    <string name="restaurant">Ресторан</string>
+    <string name="adress">Адрес</string>
+    <string name="dish">Блюдо</string>
+    <string name="price">Цена</string>
+    <string name="title_activity_menu">Меню</string>
+
+</resources>
