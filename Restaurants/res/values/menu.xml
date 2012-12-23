@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="dish_1">
+        <item >Салат «Бриз»</item>        
+        <item >370 руб.</item>
+    </string-array>
+    <string-array name="dish_2">
+        <item >Овощи запеченные на углях</item>        
+        <item >150 руб.</item>
+    </string-array>
+    <string-array name="dish_3">
+        <item >Жульен грибной</item>        
+        <item >150 руб.</item>
+    </string-array>
+    <string-array name="dish_4">
+        <item >Закуска к водочке</item>        
+        <item >180 руб.</item>
+    </string-array>
+    <string-array name="dish_5">
+        <item >Грибной крем-суп</item>        
+        <item >190 руб.</item>
+    </string-array>
+    <string-array name="dish_6">
+        <item >Рыбный суп</item>        
+        <item >320 руб.</item>
+    </string-array>
+    <string-array name="dish_7">
+        <item >Спагетти Al Pomidoro</item>        
+        <item >290 руб.</item>
+    </string-array>
+    <string-array name="dish_8">
+        <item >Паста Неро-Бьянко</item>        
+        <item >440 руб.</item>
+    </string-array>
+    <string-array name="dish_9">
+        <item >Домашние парные котлеты</item>        
+        <item >280 руб.</item>
+    </string-array>
+    <string-array name="dish_10">
+        <item >Тирамису</item>        
+        <item >190 руб.</item>
+    </string-array>
+    
+</resources>

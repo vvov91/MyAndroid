@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
+import android.widget.RatingBar;
 import android.widget.TextView;
 
 public class RestsMenuAdapter extends BaseAdapter {
@@ -41,9 +42,9 @@ public class RestsMenuAdapter extends BaseAdapter {
 		
 		Restaurant r = getRestaurant(position);
 		
-		((TextView) view.findViewById(R.id.resName)).setText(r.name);
-		((ImageView) view.findViewById(R.id.resPhoto)).setImageResource(r.image);
-		((TextView) view.findViewById(R.id.resAdress)).setText(r.adress);
+		((TextView) view.findViewById(R.id.resName)).setText(r.getName());
+		((ImageView) view.findViewById(R.id.resImage)).setImageResource(r.getImage());
+		((RatingBar) view.findViewById(R.id.resRating)).setRating(r.getRating());
 		
 		return view;
 	}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="r3_name">Full Free</string>
+    <item name="r3_rating" type="integer">2</item>
+    <string name="r3_phone">7 (812) 572&#821;38&#821;347</string>
+    <item name="r3_seaView" type="bool">true</item>
+    
+</resources>

@@ -4,40 +4,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
-
+
     <TextView
         android:id="@+id/dishName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
-        android:text="@string/dish" />
-
-    <LinearLayout
-        android:id="@+id/dishLayout"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content" >
-
-        <ImageView
-            android:id="@+id/imageView1"
-            android:layout_width="142dp"
-            android:layout_height="105dp"
-            android:layout_margin="5dp"
-            android:contentDescription="@string/dish"
-            android:src="@drawable/food" />
-
-        <TextView
-            android:id="@+id/dishPrice"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:text="@string/price" />
+        android:text="@string/dish"
+        android:textSize="@dimen/res_menu_dish" />
 
-        <CheckBox
-            android:id="@+id/dishCB"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="right|center_vertical" />
-
-    </LinearLayout>
+    <TextView
+        android:id="@+id/dishPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="5dp"
+        android:text="@string/price" />
 
 </LinearLayout>

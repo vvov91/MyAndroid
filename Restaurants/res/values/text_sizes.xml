@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="res_menu_name">9pt</dimen>
-    <dimen name="res_menu_adress">7pt</dimen>
+    <dimen name="res_menu_name">11pt</dimen>
+    <dimen name="res_menu_dish">9pt</dimen>
     
 </resources>

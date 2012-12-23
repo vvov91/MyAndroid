@@ -7,9 +7,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.CheckBox;
-import android.widget.CompoundButton;
-import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.TextView;
 
 public class DishesMenuAdapter extends BaseAdapter {
@@ -43,12 +40,8 @@ public class DishesMenuAdapter extends BaseAdapter {
 		
 		Dish d = getDish(position);
 		
-		((TextView) view.findViewById(R.id.dishName)).setText(d.name);
-		((TextView) view.findViewById(R.id.dishPrice)).setText(d.price);
-		CheckBox dishCB = (CheckBox) view.findViewById(R.id.dishCB);
-		
-		dishCB.setOnCheckedChangeListener(dishCheckListener);
-		dishCB.setTag(position);
+		((TextView) view.findViewById(R.id.dishName)).setText(d.getName());
+		((TextView) view.findViewById(R.id.dishPrice)).setText(d.getPrice());
 		
 		return view;
 	}
@@ -56,10 +49,4 @@ public class DishesMenuAdapter extends BaseAdapter {
 	Dish getDish(int position) {
 		return ((Dish) getItem(position));
 	}
-	
-	OnCheckedChangeListener dishCheckListener = new OnCheckedChangeListener() {
-		public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-			
-		}
-	};
 }

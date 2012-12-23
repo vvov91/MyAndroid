@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@color/res_menu_item"
     android:orientation="vertical" >
-
+
     <TextView
         android:id="@+id/resName"
         android:layout_width="wrap_content"
@@ -14,32 +14,23 @@
         android:layout_marginTop="3dp"
         android:text="@string/restaurant"
         android:textSize="@dimen/res_menu_name" />
-
-    <LinearLayout
-        android:id="@+id/resPhotoAdress"
-        android:layout_width="match_parent"
+
+    <ImageView
+        android:id="@+id/resImage"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@color/res_menu_item2"
-        android:orientation="horizontal" >
-
-        <ImageView
-            android:id="@+id/resPhoto"
-            android:layout_width="116dp"
-            android:layout_height="77.5dp"
-            android:layout_marginBottom="5dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="5dp"
-            android:contentDescription="@string/photo"
-            android:src="@drawable/id0" />
-
-        <TextView
-            android:id="@+id/resAdress"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="3dp"
-            android:text="@string/adress"
-            android:textSize="@dimen/res_menu_adress" />
-
-    </LinearLayout>
+        android:layout_marginLeft="5dip"
+        android:contentDescription="@string/photo"
+        android:src="@drawable/id1" />
+
+<RatingBar
+    android:id="@+id/resRating"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="3dip"
+    android:isIndicator="true"
+    android:numStars="5"
+    android:rating="0"
+    android:stepSize="1" />
 
 </LinearLayout>

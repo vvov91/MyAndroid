@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="r2_name">Венеция 16 век</string>
+    <item name="r2_rating" type="integer">5</item>
+    <string name="r2_phone">7 (495) 928&#821;90&#821;30</string>
+    <item name="r2_terminalPayment" type="bool">false</item>
+    <item name="r2_seaView" type="bool">true</item>
+    
+</resources>

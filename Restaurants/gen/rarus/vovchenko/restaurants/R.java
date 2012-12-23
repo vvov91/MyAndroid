@@ -9,56 +9,68 @@ package rarus.vovchenko.restaurants;
 
 public final class R {
     public static final class array {
-        public static final int id0=0x7f050000;
-        public static final int r_details=0x7f050001;
+        public static final int dish_1=0x7f050000;
+        public static final int dish_10=0x7f050009;
+        public static final int dish_2=0x7f050001;
+        public static final int dish_3=0x7f050002;
+        public static final int dish_4=0x7f050003;
+        public static final int dish_5=0x7f050004;
+        public static final int dish_6=0x7f050005;
+        public static final int dish_7=0x7f050006;
+        public static final int dish_8=0x7f050007;
+        public static final int dish_9=0x7f050008;
     }
     public static final class attr {
+    }
+    public static final class bool {
+        public static final int r1_delivery=0x7f080000;
+        public static final int r1_terminalPayment=0x7f080001;
+        public static final int r2_seaView=0x7f080003;
+        public static final int r2_terminalPayment=0x7f080002;
+        public static final int r3_seaView=0x7f080004;
+        public static final int r4_mountainView=0x7f080006;
+        public static final int r4_terminalPayment=0x7f080005;
     }
     public static final class color {
         public static final int res_menu_item=0x7f040000;
         public static final int res_menu_item2=0x7f040001;
     }
     public static final class dimen {
-        public static final int res_menu_adress=0x7f080001;
-        public static final int res_menu_name=0x7f080000;
+        public static final int res_menu_dish=0x7f0a0001;
+        public static final int res_menu_name=0x7f0a0000;
     }
     public static final class drawable {
-        public static final int food=0x7f020000;
-        public static final int ic_action_search=0x7f020001;
-        public static final int ic_launcher=0x7f020002;
-        public static final int id0=0x7f020003;
-        public static final int id1=0x7f020004;
-        public static final int id10=0x7f020005;
-        public static final int id11=0x7f020006;
-        public static final int id12=0x7f020007;
-        public static final int id13=0x7f020008;
-        public static final int id14=0x7f020009;
-        public static final int id2=0x7f02000a;
-        public static final int id3=0x7f02000b;
-        public static final int id4=0x7f02000c;
-        public static final int id5=0x7f02000d;
-        public static final int id6=0x7f02000e;
-        public static final int id7=0x7f02000f;
-        public static final int id8=0x7f020010;
-        public static final int id9=0x7f020011;
+        public static final int ic_action_search=0x7f020000;
+        public static final int ic_launcher=0x7f020001;
+        public static final int id1=0x7f020002;
+        public static final int id2=0x7f020003;
+        public static final int id3=0x7f020004;
+        public static final int id4=0x7f020005;
     }
     public static final class id {
-        public static final int dishCB=0x7f0a0005;
-        public static final int dishLayout=0x7f0a0002;
-        public static final int dishName=0x7f0a0001;
-        public static final int dishPrice=0x7f0a0004;
-        public static final int imageView1=0x7f0a0003;
-        public static final int mainLayout=0x7f0a000b;
-        public static final int menuItemLayout=0x7f0a0000;
-        public static final int menuLayout=0x7f0a000d;
-        public static final int menuList=0x7f0a000e;
-        public static final int menu_settings=0x7f0a000f;
-        public static final int resAdress=0x7f0a000a;
-        public static final int resMenuItem=0x7f0a0006;
-        public static final int resName=0x7f0a0007;
-        public static final int resPhoto=0x7f0a0009;
-        public static final int resPhotoAdress=0x7f0a0008;
-        public static final int restList=0x7f0a000c;
+        public static final int dishName=0x7f0c0001;
+        public static final int dishPrice=0x7f0c0002;
+        public static final int mainLayout=0x7f0c0007;
+        public static final int menuHeader=0x7f0c000a;
+        public static final int menuItemLayout=0x7f0c0000;
+        public static final int menuLayout=0x7f0c0009;
+        public static final int menuList=0x7f0c000c;
+        public static final int menu_exit=0x7f0c0010;
+        public static final int menu_sort=0x7f0c000d;
+        public static final int menu_sort_name=0x7f0c000e;
+        public static final int menu_sort_rating=0x7f0c000f;
+        public static final int resImage=0x7f0c0005;
+        public static final int resMenuItem=0x7f0c0003;
+        public static final int resMenuName=0x7f0c000b;
+        public static final int resName=0x7f0c0004;
+        public static final int resRating=0x7f0c0006;
+        public static final int restList=0x7f0c0008;
+    }
+    public static final class integer {
+        public static final int r1_rating=0x7f070000;
+        public static final int r2_rating=0x7f070001;
+        public static final int r3_rating=0x7f070002;
+        public static final int r4_rating=0x7f070003;
     }
     public static final class layout {
         public static final int item_menu=0x7f030000;
@@ -67,21 +79,35 @@ public final class R {
         public static final int menu=0x7f030003;
     }
     public static final class menu {
-        public static final int main=0x7f090000;
+        public static final int main=0x7f0b0000;
     }
     public static final class string {
-        public static final int adress=0x7f060006;
-        public static final int app_name=0x7f060000;
-        public static final int dish=0x7f060007;
-        public static final int hello_world=0x7f060001;
-        public static final int menu_settings=0x7f060002;
-        public static final int photo=0x7f060004;
-        public static final int price=0x7f060008;
-        public static final int restaurant=0x7f060005;
-        public static final int title_activity_main=0x7f060003;
-        public static final int title_activity_menu=0x7f060009;
+        public static final int adress=0x7f06000d;
+        public static final int app_name=0x7f060008;
+        public static final int delivery=0x7f060013;
+        public static final int dish=0x7f06000e;
+        public static final int menu_exit=0x7f060012;
+        public static final int menu_sort_name=0x7f060009;
+        public static final int menu_sort_rating=0x7f060011;
+        public static final int mountain_view=0x7f060016;
+        public static final int order=0x7f060017;
+        public static final int photo=0x7f06000b;
+        public static final int price=0x7f06000f;
+        public static final int r1_name=0x7f060000;
+        public static final int r1_phone=0x7f060001;
+        public static final int r2_name=0x7f060002;
+        public static final int r2_phone=0x7f060003;
+        public static final int r3_name=0x7f060004;
+        public static final int r3_phone=0x7f060005;
+        public static final int r4_name=0x7f060006;
+        public static final int r4_phone=0x7f060007;
+        public static final int restaurant=0x7f06000c;
+        public static final int sea_view=0x7f060015;
+        public static final int terminal_payment=0x7f060014;
+        public static final int title_activity_main=0x7f06000a;
+        public static final int title_activity_menu=0x7f060010;
     }
     public static final class style {
-        public static final int AppTheme=0x7f070000;
+        public static final int AppTheme=0x7f090000;
     }
 }

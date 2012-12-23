@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="r1_name">The Сад</string>
+    <item name="r1_rating" type="integer">3</item>
+    <string name="r1_phone">7 (495) 618&#821;-49&#821;-87</string>
+    <item name="r1_delivery" type="bool">true</item>
+    <item name="r1_terminalPayment" type="bool">true</item>
+    
+</resources>

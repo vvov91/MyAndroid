@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="r4_name">Распутин</string>
+    <item name="r4_rating" type="integer">1</item>
+    <string name="r4_phone">7 (495) 629&#821;79&#821;457</string>
+    <item name="r4_terminalPayment" type="bool">false</item>
+    <item name="r4_mountainView" type="bool">true</item>
+    
+</resources>
